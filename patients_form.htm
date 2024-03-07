@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CritiCare_Hospital</title>
+    <style>
+        input[type=text]{
+            border: 2px solid black;
+            padding: 8px 20px;
+            border-radius: 5px;
+        }
+        input[type=number]{
+            border: 2px solid black;
+            padding: 8px 20px;
+            border-radius: 5px;
+        }
+        table,tr,td{
+            width: 60%;
+            height: 100px;
+            border:2px solid black;
+            padding: 10px;
+            align-items: center;
+        }
+        select{
+            border: 2px solid black;
+            padding: 8px 20px;
+            border-radius: 5px;
+            margin-left: 35px;
+        }
+        input[type=date]{
+            border: 2px solid black;
+            padding: 8px 20px;
+            border-radius: 5px;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+        }
+        
+        input[type=submit]{
+            border: none;
+            border-radius: 5px;
+            padding: 20px;
+            background-color: green;
+            color: aliceblue;
+            cursor: pointer;
+            align-items: center;
+            width: 25%;
+        }
+        .oko{
+            width: 14%;
+        }
+        .cont1{
+            background-image: url("white_flowers_branches_in_white_background_hd_white_aesthetic.jpg");
+        }
+        .full{
+            background-color: white;
+            opacity: 0.4;
+        }
+        .full table{
+            font-weight: bold;
+            color: black;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="cont1">
+        <h1>Patient's Details</h1>
+        <div class="full">
+        <table>
+            <tr>
+                <td style="width: 50%;">
+                    <form>
+                        <label for="fname">First_Name:</label>
+                        <input type="text" id="fname" name="fname " placeholder="First_Name"/>
+                    </form>
+                </td>
+                <td style="width: 50%;" colspan="2">
+                <form>
+                    <label for="lname">Last_Name:</label>
+                    <input type="text" id="lname" name="lname" placeholder="Last_Name"/>
+                </form>
+                </td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td style="width: 27%;">
+                    <form>
+                        <label for="gen">Gender:</label>
+                        <input type="radio" id="gen"><label>Male</label>
+                        <input type="radio" id="gen"><label>Female</label>
+                    </form>
+                </td>
+                <td style="width: 40%;">
+                        <label for="dob">Date-of-Birth:</label>
+                        <input type="date" id="dob">
+                </td>
+                <td style="width: 33%;">
+                    <label for="phn">Phone-no:</label>
+                    <input type="number" placeholder="Phone-no." id="phn"/>
+                </td>
+                
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td style="width: 35%;">
+                    <form>
+                        <label for="add">Address:</label>
+                        <input style="height: 60px; width: 55%;" type="text" id="add" placeholder="Enter your Address">
+                    </form>
+                </td>
+                <td style="width: 30%;">
+                    <label>Select City:</label>
+                    <select id="ct">
+                        <option>Mumbai</option>
+                        <option>Pune</option>
+                        <option>Hyderabad</option>
+                        <option>Delhi</option>
+                    </select>
+                </td>
+                <td style="width: 35%;">
+                    <label>Pincode:</label>
+                    <input type="number" placeholder="ZIP">
+                </td>
+            </tr>
+        </table>
+        <table>
+
+                <td class="oko"><label for="pmh">Past Medical History:</label></td>
+                
+                <td class="oko"><input type="checkbox" id="pmh"><label>Anemia</label></td>
+                <td class="oko"><input type="checkbox" id="pmh"><label>Diabetes</label></td>
+                <td class="oko"><input type="checkbox" id="pmh"><label>BloodPressure</label></td>
+                <td class="oko"><input type="checkbox" id="pmh"><label>Nausea</label></td>
+                <td class="oko"><input type="checkbox" id="pmh"><label>Anxiety</label></td>
+                <td class="oko"><input type="checkbox" id="pmh"><label>Surgery</label></td>
+                
+            
+        </table>
+        <table>
+            <tr>
+                <td style="text-align: center;">
+                    <input type="submit" value="Submit"/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    </div>
+    
+</body>
+</html>
